@@ -55,7 +55,7 @@ TypeUtils.defineType(
 
 ```
 
-Start the service:
+#### Start the service:
 
 ```
 NOR_DATABASE_TYPES='./types.js' \
@@ -65,35 +65,35 @@ NODE_LISTEN=./socket.sock \
 npm start
 ```
 
-Create a resource:
+#### Create a resource:
 
 ```
 NODE_CONNECT=./socket.sock \
 nor-database --create='{"id": 1, name": "Foo"}'
 ```
 
-Get a specific resource:
+#### Get a specific resource:
 
 ```
 NODE_CONNECT=./socket.sock \
 nor-database --get='{"id": 1}'
 ```
 
-Get a list of resources:
+#### Get a list of resources:
 
 ```
 NODE_CONNECT=./socket.sock \
 nor-database --list
 ```
 
-Update a resource:
+#### Update a resource:
 
 ```
 NODE_CONNECT=./socket.sock \
 nor-database --update='{"where": {"id": 1}, "set": {name": "Bar"}}'
 ```
 
-Delete a resource:
+#### Delete a resource:
 
 ```
 NODE_CONNECT=./socket.sock \
