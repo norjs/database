@@ -1,0 +1,24 @@
+{
+  "name": "@norjs/database",
+  "version": "0.0.1",
+  "description": "NorJS Database Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norjs/database.git"
+  },
+  "keywords": [
+    "database",
+    "server",
+    "service"
+  ],
+  "author": "Jaakko Heusala <jheusala@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norjs/database/issues"
+  },
+  "homepage": "https://github.com/norjs/database#readme"
+}
