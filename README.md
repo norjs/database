@@ -21,6 +21,8 @@ First define your custom data objects in a file named `./types.js`:
 
 ```js
 
+const TypeUtils = require('@norjs/utils/Type');
+
 /**
  * @typedef {Object} MyResourceItemDTO
  * @property {string} id - My resource id
