@@ -25,7 +25,7 @@ const TypeUtils = require('@norjs/utils/Type');
 
 /**
  * @typedef {Object} MyResourceItemDTO
- * @property {string} id - My resource id
+ * @property {number} id - My resource id
  * @property {string} name - My resource name
  */
 TypeUtils.defineType(
@@ -38,7 +38,7 @@ TypeUtils.defineType(
 
 /**
  * @typedef {Object} MyResourceDTO
- * @property {string} id - My resource id
+ * @property {number} id - My resource id
  * @property {string} name - My resource name
  * @property {boolean} deleted - Deleted or not?
  * @property {Array.<MyResourceItemDTO>} items - My items
