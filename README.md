@@ -69,14 +69,14 @@ npm start
 
 ```
 NODE_CONNECT=./socket.sock \
-nor-database --create='{"id": 1, name": "Foo"}'
+nor-database --create --set='{"id": 1, "name": "Foo"}'
 ```
 
 #### Get a specific resource:
 
 ```
 NODE_CONNECT=./socket.sock \
-nor-database --get='{"id": 1}'
+nor-database --get --where='{"id": 1}'
 ```
 
 #### Get a list of resources:
@@ -86,16 +86,23 @@ NODE_CONNECT=./socket.sock \
 nor-database --list
 ```
 
+#### Get a list of resources by name:
+
+```
+NODE_CONNECT=./socket.sock \
+nor-database --list --where='{"name": "Foo"}'
+```
+
 #### Update a resource:
 
 ```
 NODE_CONNECT=./socket.sock \
-nor-database --update='{"where": {"id": 1}, "set": {name": "Bar"}}'
+nor-database --update --set='{"name": "Bar"}' --where='{"id": 1}'
 ```
 
 #### Delete a resource:
 
 ```
 NODE_CONNECT=./socket.sock \
-nor-database --delete='{"id": 1}'
+nor-database --delete --where='{"id": 1}'
 ```
