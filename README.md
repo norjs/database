@@ -13,10 +13,6 @@ The data can be defined using JSDoc-style configuration files and our
 
 -------------------------------------------------------------------------------------
 
-***Note!*** *This is just a draft usage; this application is not implemented yet.*
-
--------------------------------------------------------------------------------------
-
 First define your custom data objects in a file named `./types.js`:
 
 ```js
@@ -55,15 +51,13 @@ TypeUtils.defineType(
 
 ```
 
+#### Install
+
+`npm install -g @norjs/database'
+
 #### Start the service:
 
-```
-NOR_DATABASE_TYPES='./types.js' \
-NOR_DATABASE_RESOURCES=MyResourceDTO \
-NOR_DATABASE_STORE='./my-resources.json' \
-NODE_LISTEN=./socket.sock \
-npm start
-```
+See [@norjs/database-service](https://github.com/norjs/database-service) about running a service.
 
 #### Create a resource:
 
