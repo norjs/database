@@ -1,4 +1,4 @@
-# database
+# @norjs/database
 
 JSDoc Configurable Database Service
 
