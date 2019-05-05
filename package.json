@@ -1,24 +1,40 @@
 {
   "name": "@norjs/database",
   "version": "0.0.1",
-  "description": "NorJS Database Service",
-  "main": "index.js",
+  "description": "NorJS Database Service client",
+  "main": "./src/index.js",
+  "bin": {
+    "nor-database": "./src/bin/database.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*.spec.js",
+    "test-watch": "mocha --watch-extensions js --watch test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/norjs/database.git"
   },
   "keywords": [
+    "document-database",
     "database",
+    "nosql",
     "server",
-    "service"
+    "service",
+    "client"
   ],
   "author": "Jaakko Heusala <jheusala@iki.fi>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/norjs/database/issues"
   },
-  "homepage": "https://github.com/norjs/database#readme"
+  "homepage": "https://github.com/norjs/database#readme",
+  "dependencies": {
+    "@norjs/socket": "^1.0.5",
+    "@norjs/utils": "^1.0.4",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.1"
+  }
 }
