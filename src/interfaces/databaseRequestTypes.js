@@ -5,8 +5,18 @@
 const TypeUtils = require("@norjs/utils/Type");
 
 /**
- * @typedef {Object} DatabaseServiceCreateResponsePayload
- * @property {DatabaseResourceObject} payload -
+ * @typedef {Object} DatabaseCreateRequestPayload
+ * @property {T} payload - The resource to be created
+ * @template T
+ */
+TypeUtils.defineType("DatabaseCreateRequestPayload", {
+    "payload": "T"
+}, {
+    template: ["T"]
+});
+
+/**
+ * @typedef {DatabaseCreateRequestPayload<DatabaseResourceObject>} DatabaseServiceCreateResponsePayload
  */
 TypeUtils.defineType("DatabaseServiceCreateResponsePayload", {
     "payload": "DatabaseResourceObject"
@@ -18,6 +28,15 @@ TypeUtils.defineType("DatabaseServiceCreateResponsePayload", {
  */
 TypeUtils.defineType("DatabaseServiceGetRequestPayload", {
     "where": "DatabaseWhereObject"
+});
+
+
+/**
+ * @typedef {Object} DatabaseServiceCreateRequestPayload
+ * @property {DatabaseResourceObject} payload - The item to be created
+ */
+TypeUtils.defineType("DatabaseServiceCreateRequestPayload", {
+    "payload": "DatabaseResourceObject"
 });
 
 
