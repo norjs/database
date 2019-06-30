@@ -10,10 +10,15 @@ const TypeUtils = require("@norjs/utils/Type");
  * @template T
  */
 TypeUtils.defineType("DatabaseCreateRequestPayload", {
-    "payload": "T"
-}, {
-    template: ["T"]
-});
+    "payload": "*"
+}
+
+// FIXME: No template support yet:
+// , {
+//     template: ["T"]
+// }
+
+);
 
 /**
  * @typedef {DatabaseCreateRequestPayload<DatabaseResourceObject>} DatabaseServiceCreateResponsePayload
