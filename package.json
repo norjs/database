@@ -1,6 +1,6 @@
 {
   "name": "@norjs/database",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "NorJS Database Service client",
   "main": "./src/index.js",
   "bin": {
@@ -29,9 +29,9 @@
   },
   "homepage": "https://github.com/norjs/database#readme",
   "dependencies": {
-    "@norjs/socket": "^1.0.9",
-    "@norjs/utils": "^1.0.9",
-    "lodash": "^4.17.11"
+    "@norjs/socket": "^1.0.10",
+    "@norjs/utils": "^1.0.10",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "mocha": "^6.1.4",
