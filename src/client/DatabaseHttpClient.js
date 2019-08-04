@@ -1,5 +1,5 @@
 // Interfaces
-require('@norjs/socket/src/interfaces/HttpClient.js');
+require('@norjs/types/interfaces/HttpClient.js');
 require('../interfaces/DatabaseStorage.js');
 require('../interfaces/databaseRequestTypes.js');
 

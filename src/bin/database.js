@@ -123,7 +123,7 @@ const LogicUtils = require('@norjs/utils/Logic');
 LogicUtils.tryCatch( () => {
 
     // Interfaces
-    require('@norjs/socket/src/interfaces/HttpClientModule.js');
+    require('@norjs/types/interfaces/HttpClientModule.js');
 
     /**
      *
